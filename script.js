@@ -14,15 +14,18 @@ document.getElementById("giveawayForm").addEventListener("submit", function (eve
         bitcoinAddress: document.getElementById("bitcoinAddress").value,
     };
 
-    // Send form data to your EmailJS service and template
-    emailjs
-        .send("service_4wb3isl", "template_e8vem1j", formData) // Using your template ID here
+    // Logging the form data for debugging
+    console.log("Form data:", formData);
+
+    // Send the form data to EmailJS using the provided service and template IDs
+    emailjs.send("service_4wb3isl", "template_e8vem1j", formData)
         .then(
-            function () {
+            function(response) {
+                console.log("Email sent successfully:", response);
                 alert("Thank you! Your submission has been sent.");
                 document.getElementById("giveawayForm").reset(); // Clear the form after submission
             },
-            function (error) {
+            function(error) {
                 console.error("Email failed to send:", error);
                 alert("Oops! Something went wrong. Please try again.");
             }
