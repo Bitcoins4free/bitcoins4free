@@ -3,20 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Bitcoin Giveaway</title>
+    <title>Bitcoin Giveaway</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script defer src="script.js"></script>
+    <script defer>
+        // Initialize EmailJS with your public API key
+        (function () {
+            emailjs.init("kL8LldtVITo1oHfSk"); // Your public EmailJS API key
+        })();
+
+        // Form submission handling
+        document.getElementById("giveawayForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+
+            // Collect form data
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                bitcoinAddress: document.getElementById("bitcoinAddress").value,
+            };
+
+            // Logging the form data for debugging
+            console.log("Form data:", formData);
+
+            // Send the form data to EmailJS using the provided service and template IDs
+            emailjs.send("service_4wb3isl", "template_e8vem1j", formData)
+                .then(
+                    function(response) {
+                        console.log("Success:", response);
+                        alert("Thank you! Your submission has been sent.");
+                        document.getElementById("giveawayForm").reset(); // Clear the form after submission
+                    },
+                    function(error) {
+                        console.error("Email failed to send:", error);
+                        alert("Oops! Something went wrong. Please try again.");
+                    }
+                );
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Bitcoin Giveaway Test</h1>
+        <h1>Win 1 Bitcoin Every Month!</h1>
+        <p>Enter your details below to participate in the giveaway.</p>
     </header>
 
     <main>
-        <button id="testButton">Send Test Email</button>
+        <form id="giveawayForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="bitcoinAddress">Bitcoin Wallet Address</label>
+                <input type="text" id="bitcoinAddress" name="bitcoinAddress" placeholder="Your Bitcoin Wallet Address" required>
+            </div>
+            <button type="submit" class="btn">Join the Giveaway</button>
+        </form>
     </main>
-</body>
-</html>
 
     <footer>
         <p>&copy; 2024 Bitcoins4Free. All rights reserved.</p>
