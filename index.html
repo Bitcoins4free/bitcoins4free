@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script defer>
-        // Initialize EmailJS with your public API key
+        // Initialize EmailJS with the user ID (use the correct public key here)
         (function () {
             emailjs.init("kL8LldtVITo1oHfSk"); // Your EmailJS user ID (public key)
         })();
 
         // Form submission handling
         document.getElementById("giveawayForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the form from reloading the page
+            event.preventDefault(); // Prevent page reload on form submit
 
             // Collect form data
             const formData = {
@@ -23,16 +23,16 @@
                 bitcoinAddress: document.getElementById("bitcoinAddress").value,
             };
 
-            // Logging the form data for debugging
+            // Logging form data for debugging (check console)
             console.log("Form data:", formData);
 
-            // Send the form data to EmailJS using the provided service and template IDs
+            // Send form data to EmailJS using your service ID and template ID
             emailjs.send("service_4wb3isl", "template_e8vem1j", formData)
                 .then(
                     function(response) {
                         console.log("Success:", response);
                         alert("Thank you! Your submission has been sent.");
-                        document.getElementById("giveawayForm").reset(); // Clear the form after submission
+                        document.getElementById("giveawayForm").reset(); // Reset the form after submission
                     },
                     function(error) {
                         console.error("Email failed to send:", error);
@@ -44,7 +44,7 @@
 </head>
 <body>
     <header>
-        <h1>Win 100 Bitcoin Every Month!</h1>
+        <h1>Win 1 Bitcoin Every Month!</h1>
         <p>Enter your details below to participate in the giveaway.</p>
     </header>
 
@@ -71,4 +71,3 @@
     </footer>
 </body>
 </html>
-
