@@ -16,7 +16,7 @@ document.getElementById("giveawayForm").addEventListener("submit", function (eve
 
     // Send form data to your EmailJS service and template
     emailjs
-        .send("service_4wb3isl", "template_xyz123", formData) // Replace "template_xyz123" with your actual template ID
+        .send("service_4wb3isl", "template_e8vem1j", formData) // Using your template ID here
         .then(
             function () {
                 alert("Thank you! Your submission has been sent.");
@@ -28,4 +28,3 @@ document.getElementById("giveawayForm").addEventListener("submit", function (eve
             }
         );
 });
-
