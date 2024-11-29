@@ -16,7 +16,13 @@ header {
     text-align: center;
     width: 100%; /* Ensure full width */
     margin: 0;
+    margin-bottom: 20px; /* Add space between the logo and the header */
 }
+
+
+    margin-bottom: 20px; /* Add space between the logo and the header */
+
+
 
 /* Header Text */
 header h1 {
