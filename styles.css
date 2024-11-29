@@ -7,12 +7,30 @@ body {
     color: #333;
 }
 
+/* Logo Section at the Top */
+#logos {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-logo {
+    color: #ff9900;
+    font-size: 36px;
+    font-weight: bold;
+}
+
 /* Header Section */
 header {
     background-color: #007bff;
     color: white;
     padding: 40px 20px;
     text-align: center;
+    margin-top: 100px;
 }
 
 header h1 {
@@ -112,28 +130,6 @@ form button:hover {
     margin-bottom: 20px;
 }
 
-/* Logos Section */
-.text-logo {
-    color: #ff9900;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.small-logo img {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
-
 /* Footer Section */
 footer {
     text-align: center;
@@ -151,7 +147,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-    .right-text {
-        margin-top: 20px;
-    }
+/* Small Text Logo in Footer */
+.btc-logo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
 }
