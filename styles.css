@@ -7,9 +7,9 @@ body {
     color: #333;
 }
 
-/* Blue band (Header Section) */
+/* Black band (Header Section) */
 header {
-    background-color: #0044cc;
+    background-color: #333; /* Changed to black */
     color: white;
     padding: 10px 20px; /* Reduced padding for compactness */
     text-align: center;
@@ -36,7 +36,7 @@ header p {
 #logos .text-logo {
     font-size: 26px;
     font-weight: bold;
-    color: black; /* Top logo color changed to black */
+    color: orange; /* Top logo changed to orange */
     margin: 15px;
 }
 
@@ -75,7 +75,7 @@ input[type="text"], input[type="email"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #0044cc;
+    background-color: orange; /* Button color changed to orange */
     color: white;
     border: none;
     border-radius: 5px;
@@ -85,7 +85,7 @@ button {
 }
 
 button:hover {
-    background-color: #0033a0;
+    background-color: #ff8c00; /* Darker orange on hover */
 }
 
 /* Right Side: Information Section */
@@ -113,7 +113,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #333;
+    background-color: #333; /* Black footer */
     color: white;
     padding: 10px 20px; /* Reduced padding for compactness */
 }
@@ -127,7 +127,7 @@ footer .footer-left .btc-logo {
     font-size: 20px;
     font-weight: bold;
     margin: 8px 0 0;
-    color: orange; /* Bottom logo remains orange */
+    color: orange; /* Footer logo remains orange */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding a text shadow for better contrast */
 }
 
