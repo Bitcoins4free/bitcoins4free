@@ -2,197 +2,34 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure body takes full height of viewport */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Header Section */
-header {
-    background-color: #000; /* Black color for header */
-    color: white;
-    padding: 20px 0; /* Adjust padding for spacing */
-    text-align: center;
-    width: 100%; /* Ensure full width */
-    margin: 0;
-}
-
-/* Header Text */
-header h1 {
-    font-size: 28px;
-    margin: 0;
-    color: orange; /* Make "Win 1 Bitcoin Every Month!" orange */
-}
-
-/* Header Paragraph */
-header p {
-    margin: 10px 0 0;
-    font-size: 16px;
+    height: 100%; /* Full height for proper spacing */
 }
 
 /* Logo Section */
 #logos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%; /* Ensure full width for the logo section */
+    text-align: center; /* Center the logo */
+    padding: 20px 0; /* Space around the logo */
+    background-color: #000; /* Black background behind the logo */
 }
 
 #logos .text-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange; /* Orange logo */
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 10px; /* Padding for header spacing */
+    background-color: #000; /* Black background for header */
+    color: white;
+}
+
+header h1 {
     font-size: 24px;
-    font-weight: bold;
-    color: orange; /* Orange color for the top logo */
-    margin: 10px;
-    padding-bottom: 20px; /* Add space between the logo and header */
-}
-
-/* Main Content Section */
-#main-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-}
-
-/* Left Side: Form Section */
-.form-container {
-    width: 48%;
-    background-color: white;
-    padding: 20px; /* Equal padding all around the form container */
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Add top margin to create space from the black top band */
-    margin-bottom: 20px; /* Add bottom margin to create space from the black bottom band */
-}
-
-/* Form inside the form-container should have a black border */
-.form-container form {
-    border: 20px solid #000; /* Add black border of 20px only around the form */
-    padding: 10px; /* Add padding inside the form */
-}
-
-.form-container h2 {
-    margin-top: 0;
-    font-size: 22px;
-    color: #0044cc;
-}
-
-input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: orange; /* Orange button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: darkorange; /* Darker orange on hover */
-}
-
-/* Right Side: Information Section */
-.info-text {
-    width: 48%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-text h2 {
-    margin-top: 0;
-    font-size: 22px;
-    color: #0044cc;
-}
-
-.info-text p {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-/* Footer Section (Black Bottom Border) */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #000; /* Black color for footer */
-    color: white;
-    padding: 20px 0; /* Adjust padding for spacing */
-    width: 100%; /* Ensure full width */
-    margin: 0;
-    position: absolute;
-    bottom: 0; /* Ensure footer is stuck at the bottom */
-}
-
-/* Footer Left Section */
-footer .footer-left {
-    flex: 1;
-    font-size: 14px;
-    margin-right: 10px; /* Add margin for slight spacing */
-}
-
-/* Footer Left BTC Logo */
-footer .footer-left .btc-logo {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0 0;
-    color: orange; /* Orange footer logo */
-}
-
-/* Footer Right Section */
-footer .footer-right {
-    flex: 1;
-    font-size: 14px;
-    text-align: right;
-    margin-left: 10px; /* Add margin for slight spacing */
-}
-
-footer .footer-right ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer .footer-right li {
-    margin: 5px 0;
-    color: #f4f4f4;
-}
-
-/* Utility Classes */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Ensure header and footer extend to full width */
-header, footer {
-    width: 100%;
-    margin: 0; /* Ensure no margins causing gaps */
-}
-
-/* Additional Text Styling */
-footer .footer-right li {
-    font-size: 14px;
-    color: #f4f4f4;
-}
-
-/* Margin Reset */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+    margin: 20px 0 0; /* Add
