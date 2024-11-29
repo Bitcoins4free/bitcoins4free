@@ -7,12 +7,28 @@ body {
     color: #333;
 }
 
-/* Black band (Header Section) */
+/* Logo Section */
+#logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 20px 0; /* Add margin to the bottom of the logo section */
+}
+
+#logos .text-logo {
+    font-size: 36px; /* Increased size for the top logo */
+    font-weight: bold;
+    color: #ff6600; /* Orange color */
+    margin: 10px;
+}
+
+/* Header Section */
 header {
-    background-color: #333; /* Black background */
+    background-color: #333; /* Changed to black */
     color: white;
-    padding: 20px 20px; /* Increased padding for top and bottom spacing */
+    padding: 20px 20px 10px; /* Adjusted padding for spacing */
     text-align: center;
+    margin-top: 20px; /* Add space between the logo and header */
 }
 
 header h1 {
@@ -23,21 +39,6 @@ header h1 {
 header p {
     margin: 10px 0 0;
     font-size: 16px;
-}
-
-/* Logo Section */
-#logos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-
-#logos .text-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6600; /* Orange color */
-    margin: 10px;
 }
 
 /* Main Content Section */
@@ -75,7 +76,7 @@ input[type="text"], input[type="email"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #ff6600; /* Orange color */
+    background-color: #ff6600; /* Orange button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -85,7 +86,7 @@ button {
 }
 
 button:hover {
-    background-color: #e65c00; /* Slightly darker orange on hover */
+    background-color: #cc5200; /* Darker orange when hovered */
 }
 
 /* Right Side: Information Section */
@@ -113,9 +114,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #333; /* Black background */
+    background-color: #333;
     color: white;
-    padding: 20px 20px; /* Increased padding for top and bottom spacing */
+    padding: 10px 20px; /* Adjusted padding for compactness */
 }
 
 footer .footer-left {
@@ -127,7 +128,7 @@ footer .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
     margin: 5px 0 0;
-    color: #ff6600; /* Orange color */
+    color: #f4f4f4;
 }
 
 footer .footer-right {
