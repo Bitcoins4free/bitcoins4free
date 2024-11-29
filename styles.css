@@ -78,10 +78,10 @@ header p {
 .form-container input[type="text"], 
 .form-container input[type="email"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px; /* Increased padding to prevent text from touching the edges */
     margin-bottom: 8px;
     border: 1px solid #ccc;
-    border-radius: 0;
+    border-radius: 5px; /* Slightly rounded corners for better appearance */
     font-size: 14px;
 }
 
@@ -119,6 +119,7 @@ header p {
     font-size: 14px;
     line-height: 1.6;
     margin: 8px 0;
+    color: black; /* Set text color to black */
 }
 
 /* Footer Section */
@@ -140,7 +141,7 @@ footer {
 .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
-    color: orange;
+    color: orange; /* Set BTC43 to orange */
     margin-bottom: 10px;
 }
 
@@ -171,6 +172,11 @@ footer {
         width: 100%; /* Take up full width on mobile */
         margin-bottom: 20px;
     }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
 
     footer {
         padding: 15px 10px;
