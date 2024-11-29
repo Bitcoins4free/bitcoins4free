@@ -11,7 +11,7 @@ body {
 header {
     background-color: #0044cc;
     color: white;
-    padding: 10px 20px; /* Reduced padding for compactness */
+    padding: 5px 10px; /* Reduced padding for compactness */
     text-align: center;
 }
 
@@ -115,7 +115,7 @@ footer {
     align-items: flex-start;
     background-color: #333;
     color: white;
-    padding: 10px 20px; /* Reduced padding for compactness */
+    padding: 5px 10px; /* Reduced padding for compactness */
 }
 
 footer .footer-left {
