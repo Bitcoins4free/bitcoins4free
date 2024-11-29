@@ -8,17 +8,14 @@ html, body {
     color: #333;
 }
 
-/* Blue and black bands */
-header, footer {
-    width: 100%; /* Full width */
-}
-
-/* Blue Band (Header Section) */
+/* Header Section */
 header {
     background-color: #000; /* Black color for header */
     color: white;
     padding: 20px 0; /* Adjust padding for spacing */
     text-align: center;
+    width: 100%; /* Ensure full width */
+    margin: 0;
 }
 
 /* Header Text */
@@ -124,12 +121,15 @@ footer {
     background-color: #000; /* Black color for footer */
     color: white;
     padding: 20px 0; /* Adjust padding for spacing */
+    width: 100%; /* Ensure full width */
+    margin: 0;
 }
 
 /* Footer Left Section */
 footer .footer-left {
     flex: 1;
     font-size: 14px;
+    margin-right: 10px; /* Add margin for slight spacing */
 }
 
 /* Footer Left BTC Logo */
@@ -145,6 +145,7 @@ footer .footer-right {
     flex: 1;
     font-size: 14px;
     text-align: right;
+    margin-left: 10px; /* Add margin for slight spacing */
 }
 
 footer .footer-right ul {
@@ -167,6 +168,7 @@ footer .footer-right li {
 /* Ensure header and footer extend to full width */
 header, footer {
     width: 100%;
+    margin: 0; /* Ensure no margins causing gaps */
 }
 
 /* Additional Text Styling */
