@@ -3,17 +3,24 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black; /* Full page background set to black */
-    color: white; /* Default text color set to white */
-    font-family: Arial, sans-serif; /* Set global font to Arial */
+    font-family: Arial, sans-serif;
+    background-color: black;  /* Full page background set to black */
+    color: #fff;  /* Text color set to white */
+    display: flex;
+    flex-direction: column; /* Ensure the content is stacked vertically */
+    justify-content: flex-start;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
 }
 
 /* Logo Section */
 #logos {
     background-color: black;
-    padding: 10px 20px;
+    padding: 10px 0;
     text-align: left;
     color: white;
+    padding-left: 20px;
+    width: 100%;
 }
 
 #logos .text-logo {
@@ -27,7 +34,7 @@ html, body {
 header {
     background-color: black;
     color: white;
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
 }
@@ -46,12 +53,13 @@ header p {
 /* Main Content Section */
 #main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
     width: 100%;
-    gap: 20px;
-    background-color: white;
+    margin-top: 20px;
+    gap: 20px; /* 20px gap between form and info section */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
 /* Form Section */
@@ -59,8 +67,10 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 5px;
     width: 45%; /* Form takes up 45% of the width */
+    box-sizing: border-box; /* Prevents content from overflowing */
+    margin-right: 10px; /* Reduce gap between form and info section */
 }
 
 .form-container h2 {
@@ -78,12 +88,13 @@ header p {
 
 .form-container input[type="text"], 
 .form-container input[type="email"] {
-    width: 100%;
-    padding: 10px; /* Increased padding to prevent text from touching the edges */
+    width: 90%; /* Set the input width to 90% of the form container */
+    padding: 10px;
     margin-bottom: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Slightly rounded corners for better appearance */
+    border-radius: 5px;
     font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn’t push the form out */
 }
 
 .form-container button {
@@ -106,9 +117,10 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 5px;
     width: 45%; /* Info section takes up 45% of the width */
-    margin-left: 20px; /* Ensure margin matches the form container */
+    box-sizing: border-box;
+    margin-left: 10px; /* Reduce gap between info section and form */
 }
 
 .info-text h2 {
@@ -121,7 +133,7 @@ header p {
     font-size: 14px;
     line-height: 1.6;
     margin: 8px 0;
-    color: black; /* Set text color to black */
+    color: black; /* Text in black */
 }
 
 /* Footer Section */
@@ -131,8 +143,6 @@ footer {
     padding: 20px 10px;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 .footer-left {
@@ -143,7 +153,7 @@ footer {
 .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
-    color: orange; /* Set BTC43 to orange */
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -179,3 +189,4 @@ footer {
         padding: 15px 10px;
     }
 }
+
