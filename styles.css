@@ -11,18 +11,18 @@ body {
 header {
     background-color: #0044cc;
     color: white;
-    padding: 15px 30px; /* Increased padding for larger margins */
+    padding: 15px 30px; /* Balanced padding for aesthetics */
     text-align: center;
 }
 
 header h1 {
-    font-size: 32px; /* Slightly larger for better visibility */
+    font-size: 32px;
     margin: 0;
 }
 
 header p {
     margin: 12px 0 0;
-    font-size: 18px; /* Increased font size for readability */
+    font-size: 18px;
 }
 
 /* Logo Section */
@@ -34,17 +34,17 @@ header p {
 }
 
 #logos .text-logo {
-    font-size: 26px; /* Slightly larger logo text */
+    font-size: 26px;
     font-weight: bold;
-    color: orange; /* Changed to orange */
-    margin: 15px; /* Increased margin */
+    color: orange; /* Matches the bottom logo color */
+    margin: 15px;
 }
 
 /* Main Content Section */
 #main-content {
     display: flex;
     justify-content: space-between;
-    padding: 30px; /* Increased padding for better spacing */
+    padding: 30px; /* Increased padding for balance */
     gap: 30px;
 }
 
@@ -52,7 +52,7 @@ header p {
 .form-container {
     width: 48%;
     background-color: white;
-    padding: 25px; /* Increased padding inside the form */
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -65,7 +65,7 @@ header p {
 
 input[type="text"], input[type="email"] {
     width: 100%;
-    padding: 12px; /* Increased input padding */
+    padding: 12px;
     margin: 12px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -74,7 +74,7 @@ input[type="text"], input[type="email"] {
 
 button {
     width: 100%;
-    padding: 14px; /* Slightly larger button */
+    padding: 14px;
     background-color: #0044cc;
     color: white;
     border: none;
@@ -92,7 +92,7 @@ button:hover {
 .info-text {
     width: 48%;
     background-color: white;
-    padding: 25px; /* Increased padding inside the section */
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -105,7 +105,7 @@ button:hover {
 
 .info-text p {
     margin: 12px 0;
-    line-height: 1.8; /* Improved readability with more line height */
+    line-height: 1.8;
 }
 
 /* Footer Section (Black Band) */
@@ -115,19 +115,19 @@ footer {
     align-items: flex-start;
     background-color: #333;
     color: white;
-    padding: 15px 30px; /* Increased padding for larger margins */
+    padding: 15px 30px; /* Balanced padding */
 }
 
 footer .footer-left {
     flex: 1;
-    font-size: 16px; /* Slightly larger footer text */
+    font-size: 16px;
 }
 
 footer .footer-left .btc-logo {
-    font-size: 20px; /* Increased size for the BTC logo */
+    font-size: 20px;
     font-weight: bold;
     margin: 8px 0 0;
-    color: orange; /* Changed to orange */
+    color: orange; /* Matches the top logo color */
 }
 
 footer .footer-right {
@@ -142,18 +142,22 @@ footer .footer-right ul {
 }
 
 footer .footer-right li {
-    margin: 8px 0; /* Increased margin between winners */
+    color: #f4f4f4;
+    font-size: 16px;
 }
 
 /* Winner List Formatting */
-footer .footer-right li {
-    color: #f4f4f4;
-    font-size: 16px; /* Increased font size for winners */
+footer .footer-right ul {
+    padding: 0; /* No padding between items */
+    margin: 0;
 }
 
-/* Utility Classes */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+footer .footer-right li {
+    text-align: left; /* Aligns all winners to the left */
+}
+
+footer .footer-right li::before {
+    content: "• "; /* Adds a bullet before each winner */
+    color: orange;
+    font-weight: bold;
 }
