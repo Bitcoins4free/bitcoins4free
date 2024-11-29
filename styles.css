@@ -1,10 +1,36 @@
 /* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%; /* Ensure body takes full height of viewport */
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+}
+
+/* Blue and black bands */
+header, footer {
+    width: 100%; /* Full width */
+}
+
+/* Blue Band (Header Section) */
+header {
+    background-color: #000; /* Black color for header */
+    color: white;
+    padding: 20px 0; /* Adjust padding for spacing */
+    text-align: center;
+}
+
+/* Header Text */
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Header Paragraph */
+header p {
+    margin: 10px 0 0;
+    font-size: 16px;
 }
 
 /* Logo Section */
@@ -12,33 +38,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0 0 20px 0; /* Add margin to the bottom of the logo section */
-}
-
-#logos .text-logo {
-    font-size: 36px; /* Increased size for the top logo */
-    font-weight: bold;
-    color: #ff6600; /* Orange color */
-    margin: 10px;
-}
-
-/* Header Section */
-header {
-    background-color: #333; /* Changed to black */
-    color: white;
-    padding: 20px 20px 10px; /* Adjusted padding for spacing */
-    text-align: center;
-    margin-top: 20px; /* Add space between the logo and header */
-}
-
-header h1 {
-    font-size: 28px;
     margin: 0;
 }
 
-header p {
-    margin: 10px 0 0;
-    font-size: 16px;
+#logos .text-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange; /* Orange color for the logo */
+    margin: 10px;
 }
 
 /* Main Content Section */
@@ -76,7 +83,7 @@ input[type="text"], input[type="email"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #ff6600; /* Orange button */
+    background-color: orange; /* Orange button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -86,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #cc5200; /* Darker orange when hovered */
+    background-color: darkorange; /* Darker orange on hover */
 }
 
 /* Right Side: Information Section */
@@ -109,21 +116,23 @@ button:hover {
     line-height: 1.6;
 }
 
-/* Footer Section (Black Band) */
+/* Footer Section (Black Bottom Border) */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #333;
+    background-color: #000; /* Black color for footer */
     color: white;
-    padding: 10px 20px; /* Adjusted padding for compactness */
+    padding: 20px 0; /* Adjust padding for spacing */
 }
 
+/* Footer Left Section */
 footer .footer-left {
     flex: 1;
     font-size: 14px;
 }
 
+/* Footer Left BTC Logo */
 footer .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
@@ -131,6 +140,7 @@ footer .footer-left .btc-logo {
     color: #f4f4f4;
 }
 
+/* Footer Right Section */
 footer .footer-right {
     flex: 1;
     font-size: 14px;
@@ -144,12 +154,7 @@ footer .footer-right ul {
 
 footer .footer-right li {
     margin: 5px 0;
-}
-
-/* Winner List Formatting */
-footer .footer-right li {
     color: #f4f4f4;
-    font-size: 14px;
 }
 
 /* Utility Classes */
@@ -158,4 +163,23 @@ footer .footer-right li {
     display: table;
     clear: both;
 }
+
+/* Ensure header and footer extend to full width */
+header, footer {
+    width: 100%;
+}
+
+/* Additional Text Styling */
+footer .footer-right li {
+    font-size: 14px;
+    color: #f4f4f4;
+}
+
+/* Margin Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 
