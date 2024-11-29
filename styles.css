@@ -47,26 +47,12 @@ header p {
 /* Main Content Section */
 #main-content {
     display: flex;
-    flex-direction: column; /* Default column layout for mobile */
-    align-items: center;
-    padding: 10px;
-    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
     width: 100%;
-    margin: 0;
-}
-
-/* Form and Info Container (For PC Layout) */
-@media screen and (min-width: 768px) {
-    #main-content {
-        flex-direction: row; /* Side by side on large screens */
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .form-container, .info-text {
-        width: calc(50% - 10px); /* Each section takes up half the width minus the 20px gap */
-        margin: 0 10px; /* 20px gap between them */
-    }
+    margin-top: 20px;
+    gap: 20px; /* 20px gap between form and info section */
 }
 
 /* Form Section */
@@ -75,7 +61,7 @@ header p {
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
-    margin: 10px 0;
+    width: 45%; /* Form takes up 45% of the width */
 }
 
 .form-container h2 {
@@ -122,7 +108,7 @@ header p {
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
-    margin: 10px 0;
+    width: 45%; /* Info section takes up 45% of the width */
 }
 
 .info-text h2 {
@@ -176,19 +162,14 @@ footer {
 @media screen and (max-width: 768px) {
     #main-content {
         flex-direction: column; /* Stack sections vertically on mobile */
+        gap: 0;
         padding: 10px;
     }
 
     .form-container, .info-text {
-        width: 100%;
-        padding: 15px;
-        margin: 10px 0;
+        width: 100%; /* Take up full width on mobile */
+        margin-bottom: 20px;
     }
-
-    footer {
-        padding: 15px 10px;
-    }
-}
 
     footer {
         padding: 15px 10px;
