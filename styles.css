@@ -36,7 +36,7 @@ header p {
 #logos .text-logo {
     font-size: 26px;
     font-weight: bold;
-    color: orange; /* Matches the bottom logo color */
+    color: orange; /* Top logo color changed to orange */
     margin: 15px;
 }
 
@@ -133,27 +133,18 @@ footer .footer-left .btc-logo {
 footer .footer-right {
     flex: 1;
     font-size: 16px;
-    text-align: right;
+    text-align: center; /* Center the "Last 3 Winners" heading */
 }
 
 footer .footer-right ul {
     list-style-type: none;
     padding: 0;
+    text-align: left; /* Aligns winners to the left */
 }
 
 footer .footer-right li {
     color: #f4f4f4;
-    font-size: 16px;
-}
-
-/* Winner List Formatting */
-footer .footer-right ul {
-    padding: 0; /* No padding between items */
-    margin: 0;
-}
-
-footer .footer-right li {
-    text-align: left; /* Aligns all winners to the left */
+    font-size: 14px; /* Smaller text for winner addresses */
 }
 
 footer .footer-right li::before {
