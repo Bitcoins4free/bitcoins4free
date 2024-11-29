@@ -2,13 +2,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure body takes full height of the viewport */
+    height: 100%; /* Ensure body takes full height of viewport */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header Section (Black Band) */
+/* Header Section */
 header {
     background-color: #000; /* Black color for header */
     color: white;
@@ -16,9 +16,6 @@ header {
     text-align: center;
     width: 100%; /* Ensure full width */
     margin: 0;
-    position: fixed; /* Keep header at the top */
-    top: 0;
-    left: 0;
 }
 
 /* Header Text */
@@ -55,7 +52,6 @@ header p {
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
-    padding-top: 80px; /* Add space for the fixed header */
 }
 
 /* Left Side: Form Section */
@@ -118,7 +114,7 @@ button:hover {
     line-height: 1.6;
 }
 
-/* Footer Section (Black Bottom Band) */
+/* Footer Section (Black Bottom Border) */
 footer {
     display: flex;
     justify-content: space-between;
@@ -130,7 +126,6 @@ footer {
     margin: 0;
     position: absolute;
     bottom: 0; /* Ensure footer is stuck at the bottom */
-    left: 0;
 }
 
 /* Footer Left Section */
@@ -191,4 +186,3 @@ html, body {
     padding: 0;
     height: 100%;
 }
-
