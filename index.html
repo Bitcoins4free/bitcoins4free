@@ -7,55 +7,63 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script defer src="script.js"></script>
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <h1>Win 1 Bitcoin Every Month!</h1>
         <p>We are a non-governmental organization (NGO), independent from any government affiliation. Our mission is to support the community by distributing the wealth created through Bitcoin mining and investing.</p>
     </header>
 
-    <main>
-        <form id="giveawayForm">
-            <div class="form-group">
+    <!-- Giveaway Form Section -->
+    <section id="giveaway">
+        <div class="form-container">
+            <h2>Join the Giveaway</h2>
+            <form id="giveawayForm">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-            </div>
-            <div class="form-group">
+
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group">
+
                 <label for="bitcoinAddress">Bitcoin Wallet Address</label>
                 <input type="text" id="bitcoinAddress" name="bitcoinAddress" placeholder="Your Bitcoin Wallet Address" required>
-            </div>
-            <button type="submit" class="btn">Join the Giveaway</button>
-        </form>
 
-        <!-- Right Section (Text) -->
-        <div class="right-text">
-            <h2>About the Giveaway</h2>
-            <p>This is a part of our initiative to give back to the community.</p>
-            <p>No government affiliations—just a grassroots effort to make a difference in the cryptocurrency space.</p>
+                <button type="submit">Join the Giveaway</button>
+            </form>
         </div>
-    </main>
+    </section>
 
-    <!-- Last Winners Section -->
-    <div class="winners">
-        <h3>Last Winners</h3>
-        <ul>
-            <li>Paul Harrison - Bitcoin Address: 1ABC2XYZ</li>
-            <li>John Doe - Bitcoin Address: 3XYZ4ABC</li>
-            <li>Jane Smith - Bitcoin Address: 5LMN6DEF</li>
-        </ul>
-    </div>
+    <!-- Extra Text Section under the Giveaway -->
+    <section id="extra-info">
+        <p>We are an open-source, decentralized initiative built by cryptocurrency enthusiasts who have been successful in Bitcoin mining and strategic investments. We want to share the wealth we’ve gained with others in the community. The giveaway is one of the ways we can do that.</p>
+        <p>Through this giveaway, we hope to encourage participation and growth in the cryptocurrency ecosystem, where everyone can contribute and learn. There are no hidden agendas, just a simple desire to make a difference.</p>
+        <p>As part of our ongoing commitment to transparency, our giveaway is open to everyone, regardless of background or experience in cryptocurrency. We welcome all who wish to take part!</p>
+    </section>
 
+    <!-- About Giveaway Section -->
+    <section id="about-giveaway">
+        <h2>About the Giveaway</h2>
+        <p>This is a part of our initiative to give back to the community.</p>
+        <p>No government affiliations—just a grassroots effort to make a difference in the cryptocurrency space.</p>
+    </section>
+
+    <!-- Logos Section -->
+    <section id="logos">
+        <!-- Text Logo -->
+        <h1 class="text-logo">Bitcoins4Free</h1>
+        
+        <!-- Small Logo at the Bottom -->
+        <div class="small-logo">
+            <img src="btc43_logo.png" alt="BTC43 Logo" class="logo">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Bitcoins4Free. All rights reserved. <br> This is an open-source, community-driven NGO initiative, independent of any government influence. We are here to provide value and opportunity within the world of cryptocurrency.</p>
+        <p>Contact us at: <a href="mailto:bitcoins4free@proton.me">bitcoins4free@proton.me</a></p>
     </footer>
+
 </body>
 </html>
-
