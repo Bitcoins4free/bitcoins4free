@@ -59,32 +59,23 @@ header p {
 @media screen and (min-width: 768px) {
     #main-content {
         flex-direction: row; /* Side by side on large screens */
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
     }
 
     .form-container, .info-text {
-        width: 48%; /* Each section takes up roughly half the width */
-    }
-
-    .form-container {
-        margin-right: 0; /* Remove extra margin */
-    }
-
-    .info-text {
-        margin-left: 0; /* Remove extra margin */
+        width: calc(50% - 10px); /* Each section takes up half the width minus the 20px gap */
+        margin: 0 10px; /* 20px gap between them */
     }
 }
 
 /* Form Section */
 .form-container {
-    width: 100%;
-    max-width: 500px;
     background-color: white;
     padding: 15px;
-    margin: 10px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
+    margin: 10px 0;
 }
 
 .form-container h2 {
@@ -127,13 +118,11 @@ header p {
 
 /* Information Section */
 .info-text {
-    width: 100%;
-    max-width: 500px;
     background-color: white;
     padding: 15px;
-    margin: 10px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
+    margin: 10px 0;
 }
 
 .info-text h2 {
@@ -193,7 +182,13 @@ footer {
     .form-container, .info-text {
         width: 100%;
         padding: 15px;
+        margin: 10px 0;
     }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
 
     footer {
         padding: 15px 10px;
