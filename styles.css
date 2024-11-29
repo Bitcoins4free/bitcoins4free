@@ -38,6 +38,7 @@ header p {
     font-weight: bold;
     color: orange; /* Ensures the header logo matches the footer logo color */
     margin: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding a text shadow for better contrast */
 }
 
 /* Main Content Section */
@@ -128,6 +129,7 @@ footer .footer-left .btc-logo {
     font-weight: bold;
     margin: 8px 0 0;
     color: orange; /* Matches the top logo color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding a text shadow for better contrast */
 }
 
 footer .footer-right {
