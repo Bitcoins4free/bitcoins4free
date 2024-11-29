@@ -8,12 +8,6 @@ html, body {
     color: #fff;  /* Text color set to white */
 }
 
-/* Ensure full viewport height */
-body, html {
-    height: 100%; /* Ensure full height for body and html */
-    margin: 0; /* Remove default margin */
-}
-
 /* Logo Section */
 #logos {
     background-color: black;
@@ -136,7 +130,8 @@ footer {
     padding: 20px 10px;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Push the footer to the bottom */
+    position: relative;
+    bottom: 0;
 }
 
 /* Footer Content */
@@ -167,33 +162,10 @@ footer {
     text-decoration: underline;
 }
 
-/* Ensure black band fills the entire page */
-body, html {
-    height: 100%;
-}
-
-.header, .content, footer {
-    min-height: 100vh; /* Ensures sections occupy full height */
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    #main-content {
-        flex-direction: column; /* Stack sections vertically on mobile */
-        gap: 0;
-        padding: 10px;
+    footer {
+        padding: 15px 10px;
     }
-
-    .form-container, .info-text {
-        width: 100%; /* Take up full width on mobile */
-        margin-bottom: 20px;
-    }
+}
 
     footer {
         padding: 15px 10px;
