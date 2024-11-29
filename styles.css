@@ -4,7 +4,8 @@ html, body {
     padding: 0;
     height: 100%;
     background-color: black; /* Full page background set to black */
-    color: white; /* Text color set to white */
+    color: white; /* Default text color set to white */
+    font-family: Arial, sans-serif; /* Set global font to Arial */
 }
 
 /* Logo Section */
@@ -107,6 +108,7 @@ header p {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     width: 45%; /* Info section takes up 45% of the width */
+    margin-left: 20px; /* Ensure margin matches the form container */
 }
 
 .info-text h2 {
@@ -172,11 +174,6 @@ footer {
         width: 100%; /* Take up full width on mobile */
         margin-bottom: 20px;
     }
-
-    footer {
-        padding: 15px 10px;
-    }
-}
 
     footer {
         padding: 15px 10px;
