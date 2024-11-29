@@ -10,10 +10,9 @@ html, body {
 /* Logo Section */
 #logos {
     background-color: black;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: left;
     color: white;
-    padding-left: 20px;
 }
 
 #logos .text-logo {
@@ -27,7 +26,7 @@ html, body {
 header {
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
     width: 100%;
 }
@@ -46,12 +45,12 @@ header p {
 /* Main Content Section */
 #main-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
     width: 100%;
-    gap: 20px; /* 20px gap between form and info section */
-    margin-top: 20px;
+    gap: 20px;
+    background-color: white;
 }
 
 /* Form Section */
@@ -118,4 +117,62 @@ header p {
 
 .info-text p {
     font-size: 14px;
-    line-he
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;  /* Footer background set to black */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-left {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-left .btc-logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #main-content {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        gap: 0;
+        padding: 10px;
+    }
+
+    .form-container, .info-text {
+        width: 100%; /* Take up full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
