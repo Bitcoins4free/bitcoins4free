@@ -3,8 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000; /* Black background for the page */
+    color: white; /* White text for readability */
     text-align: center;
 }
 
@@ -17,22 +17,22 @@ html, body {
 
 /* Logo Section */
 #logos {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 #logos .text-logo {
     font-size: 28px;
     font-weight: bold;
-    color: orange;
+    color: orange; /* Orange logo text */
     margin: 0;
     padding: 10px 0;
 }
 
 /* Header Section */
 header {
-    background-color: #000;
-    color: white;
+    background-color: #333; /* Darker black-gray background for the header */
+    color: orange; /* Orange header text for contrast */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -41,7 +41,6 @@ header {
 header h1 {
     font-size: 32px;
     margin: 0;
-    color: orange;
 }
 
 header p {
@@ -53,24 +52,25 @@ header p {
 /* Main Content Section */
 #main-content {
     display: flex;
-    flex-wrap: wrap; /* Make items wrap on smaller screens */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
     gap: 20px;
     justify-content: center;
 }
 
-.form-container, .info-text {
-    background-color: white;
+/* Form Section */
+.form-container {
+    background-color: #111; /* Slightly lighter black for form */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
     width: 100%;
     max-width: 500px;
+    color: white; /* Ensure white text */
 }
 
-/* Form Section */
 .form-container h2 {
     font-size: 24px;
-    color: #0044cc;
+    color: orange; /* Orange title */
     margin-bottom: 20px;
 }
 
@@ -78,7 +78,6 @@ header p {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
-    color: #333;
     text-align: left;
 }
 
@@ -86,21 +85,24 @@ header p {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Dark border */
     border-radius: 5px;
+    background-color: #222; /* Slightly lighter black input background */
+    color: white;
     font-size: 14px;
 }
 
 .form-container button {
     width: 100%;
     padding: 12px;
-    background-color: orange;
+    background-color: orange; /* Orange button */
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .form-container button:hover {
@@ -108,9 +110,19 @@ header p {
 }
 
 /* Info Section */
+.info-text {
+    background-color: #111; /* Same background as form for consistency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    color: white; /* Ensure white text */
+}
+
 .info-text h2 {
     font-size: 22px;
-    color: #0044cc;
+    color: orange; /* Orange section title */
     margin-bottom: 10px;
 }
 
@@ -122,32 +134,28 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: #000;
+    background-color: #333; /* Darker footer background */
     color: white;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    border-top: 1px solid #444; /* Subtle border at the top */
 }
 
 .footer-left, .footer-right {
-    flex: 1;
-    min-width: 300px;
+    margin: 10px 0;
 }
 
 footer .footer-left p, footer .footer-right ul {
-    margin: 0;
     font-size: 14px;
+    color: white;
 }
 
 footer .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
-    color: orange;
+    color: orange; /* Orange footer logo */
 }
 
 footer .footer-right ul {
@@ -163,6 +171,7 @@ footer .footer-right ul li {
 @media (max-width: 768px) {
     #main-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .form-container, .info-text {
@@ -171,6 +180,5 @@ footer .footer-right ul li {
 
     footer {
         flex-direction: column;
-        text-align: center;
     }
 }
