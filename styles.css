@@ -11,10 +11,9 @@ body {
 /* Logo Section at the Top */
 #logos {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 20px;
     z-index: 10;
-    margin-top: 20px;
 }
 
 .text-logo {
@@ -47,7 +46,7 @@ header p {
 #main-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -106,26 +105,6 @@ form button:hover {
     line-height: 1.6;
     text-align: left;
     padding: 0 20px;
-}
-
-/* About Giveaway Section */
-#about-giveaway {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    margin-top: 30px;
-    text-align: left;
-}
-
-#about-giveaway h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-}
-
-#about-giveaway p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 /* Footer Section */
