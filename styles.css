@@ -3,120 +3,10 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: black;  /* Full page background set to black */
-    color: #fff;  /* Text color set to white */
-}
-
-/* Logo Section */
-#logos {
-    background-color: black;
-    padding: 10px 0;
-    text-align: left;
-    color: white;
-    padding-left: 20px;
-}
-
-#logos .text-logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: orange;
-    margin: 0;
-}
-
-/* Header Section */
-header {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 28px;
-    margin: 0;
-    color: orange;
-}
-
-header p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Main Content Section */
-#main-content {
+    background-color: black; /* Full page background set to black */
+    color: white; /* Text color set to white */
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-}
-
-/* Form Section */
-.form-container {
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Form takes up 45% of the width */
-}
-
-.form-container h2 {
-    font-size: 22px;
-    margin-top: 0;
-    color: orange;
-}
-
-.form-container label {
-    display: block;
-    margin: 8px 0 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-.form-container input[type="text"], 
-.form-container input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 8px;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    font-size: 14px;
-}
-
-.form-container button {
-    width: 100%;
-    padding: 12px;
-    background-color: orange;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.form-container button:hover {
-    background-color: darkorange;
-}
-
-/* Information Section */
-.info-text {
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Info section takes up 45% of the width */
-}
-
-.info-text h2 {
-    font-size: 22px;
-    margin-top: 0;
-    color: orange;
-}
-
-.info-text p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 8px 0;
+    flex-direction: column;
 }
 
 /* Footer Section */
@@ -126,48 +16,29 @@ footer {
     padding: 20px 10px;
     text-align: center;
     width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
-.footer-left {
-    margin: 0 auto;
+/* Additional Footer Styling */
+footer .footer-left {
     text-align: center;
+    margin: 0 auto;
 }
 
-.footer-left .btc-logo {
+footer .btc-logo {
     font-size: 18px;
     font-weight: bold;
     color: orange;
     margin-bottom: 10px;
 }
 
-.footer-left p {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.footer-left a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
-.footer-left a:hover {
+footer a:hover {
     color: orange;
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    #main-content {
-        flex-direction: column; /* Stack sections vertically on mobile */
-        gap: 0;
-    }
-
-    .form-container, .info-text {
-        width: 100%; /* Take up full width on mobile */
-        margin-bottom: 20px;
-    }
-
-    footer {
-        padding: 15px 10px;
-    }
-}
