@@ -12,7 +12,7 @@ body {
     background-color: #0044cc;
     color: white;
     padding-top: 15px; /* Reduced from 20px to 15px */
-    padding-bottom: 0px; /* Reduced from 20px to 15px */
+    padding-bottom: 1px; /* Reduced from 20px to 15px */
     text-align: center;
     font-size: 24px;
 }
@@ -46,8 +46,8 @@ body {
 .footer {
     background-color: #333;
     color: white;
-    padding-top: 0px; /* Reduced from 15px to 10px */
-    padding-bottom: 10px; /* Reduced from 15px to 10px */
+    padding-top: 1px; /* Reduced from 15px to 10px */
+    padding-bottom: 1px; /* Reduced from 15px to 10px */
     text-align: center;
     font-size: 14px;
     margin-top: 20px;
