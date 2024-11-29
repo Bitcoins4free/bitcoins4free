@@ -37,6 +37,7 @@ header p {
     top: 0;
     left: 0;
     margin: 0;
+    width: 100%; /* Ensure full width for the logo section */
 }
 
 #logos .text-logo {
@@ -44,6 +45,7 @@ header p {
     font-weight: bold;
     color: orange; /* Orange color for the top logo */
     margin: 10px;
+    padding-bottom: 20px; /* Add space between the logo and header */
 }
 
 /* Main Content Section */
@@ -58,9 +60,17 @@ header p {
 .form-container {
     width: 48%;
     background-color: white;
-    padding: 20px;
+    padding: 20px; /* Equal padding all around the form container */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add top margin to create space from the black top band */
+    margin-bottom: 20px; /* Add bottom margin to create space from the black bottom band */
+}
+
+/* Form inside the form-container should have a black border */
+.form-container form {
+    border: 20px solid #000; /* Add black border of 20px only around the form */
+    padding: 10px; /* Add padding inside the form */
 }
 
 .form-container h2 {
