@@ -130,11 +130,8 @@ footer {
     padding: 20px 10px;
     text-align: center;
     width: 100%;
-    position: relative;
-    bottom: 0;
 }
 
-/* Footer Content */
 .footer-left {
     margin: 0 auto;
     text-align: center;
@@ -161,6 +158,19 @@ footer {
     color: orange;
     text-decoration: underline;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #main-content {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        gap: 0;
+        padding: 10px;
+    }
+
+    .form-container, .info-text {
+        width: 100%; /* Take up full width on mobile */
+        margin-bottom: 20px;
+    }
 
     footer {
         padding: 15px 10px;
