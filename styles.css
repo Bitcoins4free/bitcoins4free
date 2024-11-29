@@ -4,8 +4,8 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: black;  /* Full page background set to black */
+    color: #fff;  /* Text color set to white */
 }
 
 /* Logo Section */
@@ -30,7 +30,6 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    width: 100%;
 }
 
 header h1 {
@@ -50,9 +49,8 @@ header p {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    gap: 20px;
     width: 100%;
-    margin-top: 20px;
-    gap: 20px; /* 20px gap between form and info section */
 }
 
 /* Form Section */
@@ -60,7 +58,6 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
     width: 45%; /* Form takes up 45% of the width */
 }
 
@@ -107,7 +104,6 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
     width: 45%; /* Info section takes up 45% of the width */
 }
 
@@ -125,10 +121,11 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: black;
+    background-color: black;  /* Footer background set to black */
     color: white;
     padding: 20px 10px;
     text-align: center;
+    width: 100%;
 }
 
 .footer-left {
@@ -163,7 +160,6 @@ footer {
     #main-content {
         flex-direction: column; /* Stack sections vertically on mobile */
         gap: 0;
-        padding: 10px;
     }
 
     .form-container, .info-text {
