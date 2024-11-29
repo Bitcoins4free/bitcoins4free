@@ -15,27 +15,27 @@ html, body {
     padding: 20px;
 }
 
-/* Logo Section */
+/* Logo Section (Bitcoins4Free) */
 #logos {
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #000; /* Black background */
+    padding: 20px 0; /* Add padding for space around logo */
+    margin: 0; /* Remove margin for seamless black band */
 }
 
 #logos .text-logo {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: orange; /* Orange logo text */
     margin: 0;
-    padding: 10px 0;
 }
 
-/* Header Section */
+/* Header Section (Black Band Below Logo) */
 header {
     background-color: #333; /* Darker black-gray background for the header */
     color: orange; /* Orange header text for contrast */
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 0; /* No gap under logo */
+    border-top: 1px solid #444; /* Optional subtle border to separate sections */
 }
 
 header h1 {
@@ -55,6 +55,7 @@ header p {
     flex-wrap: wrap; /* Wrap content on smaller screens */
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 /* Form Section */
@@ -134,7 +135,7 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: #333; /* Darker footer background */
+    background-color: #000; /* Black footer background */
     color: white;
     padding: 20px;
     text-align: center;
@@ -142,29 +143,25 @@ footer {
     border-top: 1px solid #444; /* Subtle border at the top */
 }
 
-.footer-left, .footer-right {
+footer .footer-left, footer .footer-right {
     margin: 10px 0;
 }
 
-footer .footer-left p, footer .footer-right ul {
-    font-size: 14px;
-    color: white;
+.footer-left {
+    text-align: center; /* Center align footer text */
 }
 
-footer .footer-left .btc-logo {
+.footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
+    margin: 0;
     color: orange; /* Orange footer logo */
 }
 
-footer .footer-right ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer .footer-right ul li {
-    margin: 5px 0;
+.footer-left p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
 }
 
 /* Responsive Design */
@@ -177,6 +174,12 @@ footer .footer-right ul li {
     .form-container, .info-text {
         width: 100%;
     }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
 
     footer {
         flex-direction: column;
