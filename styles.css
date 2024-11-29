@@ -2,13 +2,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure body takes full height of viewport */
+    height: 100%; /* Ensure body takes full height of the viewport */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header Section */
+/* Header Section (Black Band) */
 header {
     background-color: #000; /* Black color for header */
     color: white;
@@ -16,12 +16,16 @@ header {
     text-align: center;
     width: 100%; /* Ensure full width */
     margin: 0;
+    position: fixed; /* Keep header at the top */
+    top: 0;
+    left: 0;
 }
 
 /* Header Text */
 header h1 {
     font-size: 28px;
     margin: 0;
+    color: orange; /* Make "Win 1 Bitcoin Every Month!" orange */
 }
 
 /* Header Paragraph */
@@ -41,7 +45,7 @@ header p {
 #logos .text-logo {
     font-size: 24px;
     font-weight: bold;
-    color: orange; /* Orange color for the logo */
+    color: orange; /* Orange color for the top logo */
     margin: 10px;
 }
 
@@ -51,6 +55,7 @@ header p {
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
+    padding-top: 80px; /* Add space for the fixed header */
 }
 
 /* Left Side: Form Section */
@@ -113,7 +118,7 @@ button:hover {
     line-height: 1.6;
 }
 
-/* Footer Section (Black Bottom Border) */
+/* Footer Section (Black Bottom Band) */
 footer {
     display: flex;
     justify-content: space-between;
@@ -123,6 +128,9 @@ footer {
     padding: 20px 0; /* Adjust padding for spacing */
     width: 100%; /* Ensure full width */
     margin: 0;
+    position: absolute;
+    bottom: 0; /* Ensure footer is stuck at the bottom */
+    left: 0;
 }
 
 /* Footer Left Section */
@@ -137,7 +145,7 @@ footer .footer-left .btc-logo {
     font-size: 18px;
     font-weight: bold;
     margin: 5px 0 0;
-    color: #f4f4f4;
+    color: orange; /* Orange footer logo */
 }
 
 /* Footer Right Section */
@@ -183,5 +191,4 @@ html, body {
     padding: 0;
     height: 100%;
 }
-
 
