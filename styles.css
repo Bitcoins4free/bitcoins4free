@@ -11,8 +11,8 @@ body {
 /* Logo Section at the Top */
 #logos {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    right: 20px;
     z-index: 10;
 }
 
@@ -26,18 +26,17 @@ body {
 header {
     background-color: #007bff;
     color: white;
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
-    margin-top: 80px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 28px;
     margin: 0;
 }
 
 header p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     margin-top: 10px;
 }
@@ -109,8 +108,10 @@ form button:hover {
 
 /* Footer Section */
 footer {
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     background-color: #333;
     color: white;
 }
@@ -122,6 +123,31 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Left: Contact and Logo */
+.footer-left {
+    text-align: left;
+}
+
+/* Right: Last 3 Winners */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-right li {
+    font-size: 14px;
 }
 
 /* Small Text Logo in Footer */
@@ -143,11 +169,12 @@ footer a:hover {
         width: 100%;
     }
 
-    .info-text {
-        padding: 0;
+    .footer-right {
+        text-align: left;
+        margin-top: 20px;
     }
 
     header {
-        padding: 30px 20px;
+        padding: 15px 20px;
     }
 }
