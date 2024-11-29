@@ -56,14 +56,6 @@ header p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Add top margin to create space from the black top band */
-    margin-bottom: 20px; /* Add bottom margin to create space from the black bottom band */
-}
-
-/* Form itself should have a black border */
-.form-container form {
-    border: 20px solid #000; /* Add black border of 20px only around the form */
-    padding: 10px; /* Add padding inside the form */
 }
 
 .form-container h2 {
@@ -189,3 +181,5 @@ html, body {
     padding: 0;
     height: 100%;
 }
+
+
