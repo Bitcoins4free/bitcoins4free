@@ -1,36 +1,17 @@
-/* General Styling */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden;
 }
 
-/* Logo Section at the Top (on the left side) */
-#logos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-}
-
-.text-logo {
-    color: #ff9900;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Section with Blue Block */
+/* Blue band (Header Section) */
 header {
-    background-color: #007bff;
+    background-color: #0044cc;
     color: white;
-    padding: 20px 20px;
+    padding: 10px 20px; /* Reduced padding for compactness */
     text-align: center;
 }
 
@@ -40,145 +21,139 @@ header h1 {
 }
 
 header p {
+    margin: 10px 0 0;
     font-size: 16px;
-    line-height: 1.6;
-    margin-top: 10px;
 }
 
-/* Main Content Section - Form and Text Section */
+/* Logo Section */
+#logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+#logos .text-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;
+}
+
+/* Main Content Section */
 #main-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
 }
 
-/* Form Section (Left Side) */
+/* Left Side: Form Section */
 .form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#giveaway h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.form-container h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #0044cc;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-form input {
+input[type="text"], input[type="email"] {
+    width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-form button {
-    padding: 10px;
-    background-color: #007bff;
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0044cc;
     color: white;
-    font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-form button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #0033a0;
 }
 
-/* Text Section (Right Side) */
+/* Right Side: Information Section */
 .info-text {
     width: 48%;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Section */
+.info-text h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #0044cc;
+}
+
+.info-text p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Footer Section (Black Band) */
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    align-items: flex-start;
     background-color: #333;
     color: white;
+    padding: 10px 20px; /* Reduced padding for compactness */
 }
 
-footer a {
-    color: #ff9900;
-    text-decoration: none;
+footer .footer-left {
+    flex: 1;
+    font-size: 14px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer .footer-left .btc-logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 0;
+    color: #f4f4f4;
 }
 
-/* Left: Contact and Logo */
-.footer-left {
-    text-align: left;
-}
-
-/* Right: Last 3 Winners */
-.footer-right {
+footer .footer-right {
+    flex: 1;
+    font-size: 14px;
     text-align: right;
 }
 
-.footer-right h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-right ul {
+footer .footer-right ul {
     list-style-type: none;
     padding: 0;
 }
 
-.footer-right li {
+footer .footer-right li {
+    margin: 5px 0;
+}
+
+/* Winner List Formatting */
+footer .footer-right li {
+    color: #f4f4f4;
     font-size: 14px;
 }
 
-/* Small Text Logo in Footer */
-.btc-logo {
-    font-size: 14px;
-    font-weight: bold;
-    color: #007bff;
-    margin-top: 10px;
-}
-
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-    #main-content {
-        flex-direction: column;
-    }
-
-    .form-container,
-    .info-text {
-        width: 100%;
-    }
-
-    .footer-right {
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    header {
-        padding: 15px 20px;
-    }
+/* Utility Classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
