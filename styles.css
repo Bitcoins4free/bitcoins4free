@@ -2,34 +2,111 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    height: 100%; /* Full height for proper spacing */
+    text-align: center; /* Center-align everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centered Container */
+.container {
+    width: 90%; /* Default width for smaller screens */
+    max-width: 800px; /* Maximum width for larger screens */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Space around the box */
+    text-align: left; /* Align text to the left inside the box */
 }
 
 /* Logo Section */
 #logos {
-    text-align: center; /* Center the logo */
-    padding: 20px 0; /* Space around the logo */
-    background-color: #000; /* Black background behind the logo */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logos to the left */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px;
 }
 
 #logos .text-logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    color: orange; /* Orange logo */
+    color: orange; /* Logo color */
     margin: 0;
+    padding: 0;
 }
 
 /* Header Section */
 header {
-    text-align: center;
-    padding: 20px 10px; /* Padding for header spacing */
-    background-color: #000; /* Black background for header */
-    color: white;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 24px;
-    margin: 20px 0 0; /* Add
+    font-size: 28px;
+    color: orange; /* Header text color */
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Form Section */
+.form-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 22px;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 40px); /* Adjust input width for padding */
+    max-width: 700px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: orange; /* Orange button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+foot
