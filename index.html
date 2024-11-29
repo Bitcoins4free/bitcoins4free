@@ -1,91 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin Giveaway</title>
-    <link rel="stylesheet" href="styles.css">
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- Include the latest EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
-    <!-- Initialize EmailJS with your public key -->
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("kL8LldtVITo1oHfSk"); // Replace with your public EmailJS key
-        })();
-    </script>
+/* Logo Section */
+#logos {
+    background-color: black; /* Black background behind the logo */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
 
-    <script defer src="script.js"></script>
-</head>
-<body>
+#logos .text-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange; /* Logo text in orange */
+    margin: 0;
+}
 
-    <!-- Logo Section at the Top (on the left side) -->
-    <section id="logos">
-        <!-- Text Logo (no border or padding) -->
-        <h1 class="text-logo">Bitcoins4Free</h1>
-    </section>
+/* Header Section */
+header {
+    background-color: black; /* Black background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
 
-    <!-- Header Section with Blue Block -->
-    <header>
-        <h1>Win 1 Bitcoin Every Month!</h1>
-        <p>We are a non-governmental organization (NGO), independent from any government affiliation. Our mission is to support the community by distributing the wealth created through Bitcoin mining and investing.</p>
-    </header>
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: orange; /* Orange text for the header title */
+}
 
-    <!-- Main Content Section (Form and Information) -->
-    <section id="main-content">
-        <!-- Left Side: Form Section -->
-        <div class="form-container">
-            <h2>Join the Giveaway</h2>
-            <form id="giveawayForm">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+header p {
+    font-size: 16px;
+    margin-top: 10px;
+}
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+/* Main Content Section (Grey Band) */
+#main-content {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically for responsiveness */
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey band */
+    width: 100%;
+    margin: 0;
+    border-radius: 0; /* No rounded corners */
+}
 
-                <label for="bitcoinAddress">Bitcoin Wallet Address</label>
-                <input type="text" id="bitcoinAddress" name="bitcoinAddress" placeholder="Your Bitcoin Wallet Address" required>
+/* Form Section */
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Restrict the width */
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0; /* Space between form and other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* No rounded corners */
+}
 
-                <button type="submit">Join the Giveaway</button>
-            </form>
-        </div>
+.form-container h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: orange; /* Orange heading */
+}
 
-        <!-- Right Side: Information Section -->
-        <div class="info-text">
-            <h2>About the Giveaway</h2>
-            <p>This is a part of our initiative to give back to the community.</p>
-            <p>No government affiliations—just a grassroots effort to make a difference in the cryptocurrency space.</p>
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
 
-            <h2>Our Mission</h2>
-         
-<p>We are an open-source, decentralized initiative formed by cryptocurrency enthusiasts with successful experience in Bitcoin mining and strategic investments. Our goal is to share the wealth we've gained with the community through this giveaway.</p>
+.form-container input[type="text"], 
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0; /* No rounded corners */
+    font-size: 14px;
+}
 
-<p>Our giveaway is open to all, regardless of experience, as part of our commitment to transparency and community growth.</p>
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-        </div>
-    </section>
+.form-container button:hover {
+    background-color: darkorange;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <!-- Left: Logo and Contact -->
-        <div class="footer-left">
-         
-            <!-- Small Text Logo in Footer -->
-            <p class="btc-logo">BTC43</p>
-           <p>Contact us at: <a href="mailto:bitcoins4free@proton.me">bitcoins4free@proton.me</a></p>
-</div>
+/* Information Section */
+.info-text {
+    width: 100%;
+    max-width: 500px; /* Limit width for better readability */
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* No rounded corners */
+}
 
-        <!-- Right: Last 3 Winners -->
-        <div class="footer-right">
-            <h2>Last 3 Winners:</h2>
-            <ul>
-                <li>Winner 1: 1A1zP1eP5Q...</li>
-                <li>Winner 2: 3KjUJ6GV...</li>
-                <li>Winner 3: 15ft7jw7...</li>
-            </ul>
-        </div>
-    </footer>
+.info-text h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: orange; /* Orange heading */
+}
 
-</body>
-</html>
+.info-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-left {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-left .btc-logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px; /* Space between the logo and the email */
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #main-content {
+        padding: 10px;
+    }
+
+    .form-container, .info-text {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
