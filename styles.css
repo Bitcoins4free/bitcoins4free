@@ -6,6 +6,10 @@ html, body {
     background-color: black; /* Full page background set to black */
     color: white; /* Default text color set to white */
     font-family: Arial, sans-serif; /* Set global font to Arial */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensure content fills the page */
 }
 
 /* Logo Section */
@@ -46,12 +50,14 @@ header p {
 /* Main Content Section */
 #main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the main content horizontally */
     align-items: flex-start;
     padding: 20px;
-    width: 100%;
     gap: 20px;
     background-color: white;
+    width: 80%; /* Limit the width */
+    max-width: 1200px; /* Prevent it from getting too wide */
+    margin-top: 20px;
 }
 
 /* Form Section */
@@ -59,8 +65,9 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 5px;
     width: 45%; /* Form takes up 45% of the width */
+    box-sizing: border-box; /* Prevents content from overflowing */
 }
 
 .form-container h2 {
@@ -84,6 +91,7 @@ header p {
     border: 1px solid #ccc;
     border-radius: 5px; /* Slightly rounded corners for better appearance */
     font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn’t push the form out */
 }
 
 .form-container button {
@@ -106,8 +114,9 @@ header p {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 5px;
     width: 45%; /* Info section takes up 45% of the width */
+    box-sizing: border-box;
     margin-left: 20px; /* Ensure margin matches the form container */
 }
 
@@ -174,6 +183,11 @@ footer {
         width: 100%; /* Take up full width on mobile */
         margin-bottom: 20px;
     }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
 
     footer {
         padding: 15px 10px;
