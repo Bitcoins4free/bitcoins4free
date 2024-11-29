@@ -58,7 +58,7 @@ header p {
 /* Form and Info Container (For PC Layout) */
 @media screen and (min-width: 768px) {
     #main-content {
-        flex-direction: row; /* Arrange form and info side by side on large screens */
+        flex-direction: row; /* Side by side on large screens */
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -68,11 +68,11 @@ header p {
     }
 
     .form-container {
-        margin-right: 10px; /* Reduced gap between form and info */
+        margin-right: 0; /* Remove extra margin */
     }
 
     .info-text {
-        margin-left: 10px; /* Reduced gap between form and info */
+        margin-left: 0; /* Remove extra margin */
     }
 }
 
@@ -186,6 +186,7 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     #main-content {
+        flex-direction: column; /* Stack sections vertically on mobile */
         padding: 10px;
     }
 
@@ -198,5 +199,3 @@ footer {
         padding: 15px 10px;
     }
 }
-
-
