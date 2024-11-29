@@ -4,8 +4,8 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: black;  /* Full page background set to black */
-    color: #fff;  /* Text color set to white */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Logo Section */
@@ -125,11 +125,10 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: black;  /* Footer background set to black */
+    background-color: black;
     color: white;
     padding: 20px 10px;
     text-align: center;
-    width: 100%;
 }
 
 .footer-left {
