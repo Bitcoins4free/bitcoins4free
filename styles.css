@@ -11,18 +11,18 @@ body {
 header {
     background-color: #0044cc;
     color: white;
-    padding: 10px 20px; /* Reduced padding for compactness */
+    padding: 15px 30px; /* Increased padding for larger margins */
     text-align: center;
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 32px; /* Slightly larger for better visibility */
     margin: 0;
 }
 
 header p {
-    margin: 10px 0 0;
-    font-size: 16px;
+    margin: 12px 0 0;
+    font-size: 18px; /* Increased font size for readability */
 }
 
 /* Logo Section */
@@ -34,54 +34,54 @@ header p {
 }
 
 #logos .text-logo {
-    font-size: 24px;
+    font-size: 26px; /* Slightly larger logo text */
     font-weight: bold;
-    color: #fff;
-    margin: 10px;
+    color: orange; /* Changed to orange */
+    margin: 15px; /* Increased margin */
 }
 
 /* Main Content Section */
 #main-content {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
+    padding: 30px; /* Increased padding for better spacing */
+    gap: 30px;
 }
 
 /* Left Side: Form Section */
 .form-container {
     width: 48%;
     background-color: white;
-    padding: 20px;
+    padding: 25px; /* Increased padding inside the form */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 24px;
     color: #0044cc;
 }
 
 input[type="text"], input[type="email"] {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px; /* Increased input padding */
+    margin: 12px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 button {
     width: 100%;
-    padding: 12px;
+    padding: 14px; /* Slightly larger button */
     background-color: #0044cc;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 button:hover {
@@ -92,20 +92,20 @@ button:hover {
 .info-text {
     width: 48%;
     background-color: white;
-    padding: 20px;
+    padding: 25px; /* Increased padding inside the section */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-text h2 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 24px;
     color: #0044cc;
 }
 
 .info-text p {
-    margin: 10px 0;
-    line-height: 1.6;
+    margin: 12px 0;
+    line-height: 1.8; /* Improved readability with more line height */
 }
 
 /* Footer Section (Black Band) */
@@ -115,24 +115,24 @@ footer {
     align-items: flex-start;
     background-color: #333;
     color: white;
-    padding: 10px 20px; /* Reduced padding for compactness */
+    padding: 15px 30px; /* Increased padding for larger margins */
 }
 
 footer .footer-left {
     flex: 1;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger footer text */
 }
 
 footer .footer-left .btc-logo {
-    font-size: 18px;
+    font-size: 20px; /* Increased size for the BTC logo */
     font-weight: bold;
-    margin: 5px 0 0;
-    color: #f4f4f4;
+    margin: 8px 0 0;
+    color: orange; /* Changed to orange */
 }
 
 footer .footer-right {
     flex: 1;
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
 }
 
@@ -142,13 +142,13 @@ footer .footer-right ul {
 }
 
 footer .footer-right li {
-    margin: 5px 0;
+    margin: 8px 0; /* Increased margin between winners */
 }
 
 /* Winner List Formatting */
 footer .footer-right li {
     color: #f4f4f4;
-    font-size: 14px;
+    font-size: 16px; /* Increased font size for winners */
 }
 
 /* Utility Classes */
