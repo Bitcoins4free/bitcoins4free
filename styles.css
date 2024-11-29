@@ -126,8 +126,6 @@ footer {
     margin: 0;
     position: absolute;
     bottom: 0; /* Ensure footer is stuck at the bottom */
-    left: 0;
-    margin-top: 20px; /* Add margin-top to align with the site */
 }
 
 /* Footer Left Section */
@@ -161,11 +159,6 @@ footer .footer-right ul {
 footer .footer-right li {
     margin: 5px 0;
     color: #f4f4f4;
-}
-
-/* Last 3 Winners text should be orange */
-footer .footer-right li.winner-text {
-    color: orange; /* Make "Last 3 Winners" text orange */
 }
 
 /* Utility Classes */
