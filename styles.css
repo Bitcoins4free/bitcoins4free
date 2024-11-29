@@ -126,9 +126,9 @@ footer {
     padding: 20px 10px;
     text-align: center;
     width: 100%;
-    position: relative; /* Keeps the footer at the bottom */
-    bottom: 0;
+    margin-top: auto;  /* This will make the footer stick to the bottom */
 }
+
 
 .footer-left {
     margin: 0 auto;
